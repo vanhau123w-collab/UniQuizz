@@ -1,0 +1,11 @@
+# UniQuizz - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://uniquizzdom.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

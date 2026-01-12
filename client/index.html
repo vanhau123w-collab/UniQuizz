@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload your main font -->
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- SEO Meta -->
+    <title>UniQuizz - Tạo Quiz Tự Động Bằng AI | Học Nhanh, Nhớ Lâu</title>
+    <meta
+      name="description"
+      content="UniQuizz giúp sinh viên tạo quiz tự động từ file ,.pdf, .docx,... bằng AI. Học nhanh, nhớ lâu, tiết kiệm thời gian. Hỗ trợ flashcard, mentor AI và các công cụ học tập thông minh."
+    />
+    <meta
+      name="keywords"
+      content="quiz online, tạo quiz AI, học tập, sinh viên, flashcard, ôn thi, UniQuizz, tạo quiz từ docx"
+    />
+    <meta name="author" content="UniQuizz - Đom Đóm 71" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://uniquizzdom.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://uniquizzdom.vercel.app" />
+    <meta property="og:title" content="UniQuizz - Tạo Quiz Tự Động Bằng AI" />
+    <meta
+      property="og:description"
+      content="Tạo quiz từ file .pdf, .docx,... chỉ trong vài giây! Học nhanh, nhớ lâu cùng UniQuizz."
+    />
+    <meta
+      property="og:image"
+      content="https://uniquizzdom.vercel.app/og-imagev2.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="UniQuizz - Tạo Quiz Tự Động Bằng AI" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="UniQuizz" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://uniquizzdom.vercel.app" />
+    <meta name="twitter:title" content="UniQuizz - Tạo Quiz Tự Động Bằng AI" />
+    <meta
+      name="twitter:description"
+      content="Học nhanh, nhớ lâu, tiết kiệm thời gian với UniQuizz AI."
+    />
+    <meta
+      name="twitter:image"
+      content="https://uniquizzdom.vercel.app/og-imagev2.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#dc2626" />
+
+    <!-- Live2D Cubism Core -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- iOS PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="UniQuizz" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "UniQuizz",
+        "description": "Tạo quiz tự động từ file .docx bằng AI. Học nhanh, nhớ lâu, tiết kiệm thời gian.",
+        "url": "https://uniquizzdom.vercel.app/",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "VND"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "150"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+
+/* Keyframe chính cho việc rơi và xoay */
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px);
+  }
+  25% {
+    transform: rotate(45deg) translateX(20px);
+  }
+  50% {
+    transform: rotate(-30deg) translateX(-15px);
+  }
+  75% {
+    transform: rotate(60deg) translateX(10px);
+  }
+  100% {
+    top: 110%; /* Rơi xuống hết màn hình */
+    opacity: 0.5;
+    transform: rotate(120deg) translateX(30px);
+  }
+}
+
+/* Container chứa các cánh hoa */
+.falling-blossoms-container {
+  position: fixed; /* Hoặc 'absolute' nếu bạn muốn nó cuộn theo trang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none; /* Rất QUAN TRỌNG: cho phép click xuyên qua */
+  z-index: 100; /* Nằm dưới nội dung (mà chúng ta sẽ set z-index: 10) */
+  overflow: hidden;
+}
+
+/* Kiểu dáng của một cánh hoa */
+.blossom {
+  position: absolute;
+  top: -10%; /* Bắt đầu từ bên trên màn hình */
+  
+  /* Sử dụng ảnh của bạn */
+  background-image: url('/bloom_falling.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 20px; /* Kích thước hoa */
+  height: 20px;
+  
+  /* Áp dụng animation */
+  animation: fall linear infinite;
+}
+
+
+.blossom:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; }
+.blossom:nth-child(2) { left: 15%; animation-duration: 8s; animation-delay: 2s; width: 15px; height: 15px; }
+.blossom:nth-child(3) { left: 25%; animation-duration: 12s; animation-delay: 1s; }
+.blossom:nth-child(4) { left: 35%; animation-duration: 7s; animation-delay: 4s; }
+.blossom:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 3s; width: 25px; height: 25px; }
+.blossom:nth-child(6) { left: 55%; animation-duration: 9s; animation-delay: 0.5s; }
+.blossom:nth-child(7) { left: 65%; animation-duration: 13s; animation-delay: 2.5s; }
+.blossom:nth-child(8) { left: 75%; animation-duration: 8s; animation-delay: 5s; }
+.blossom:nth-child(9) { left: 85%; animation-duration: 10s; animation-delay: 1.5s; width: 15px; height: 15px; }
+.blossom:nth-child(10) { left: 95%; animation-duration: 12s; animation-delay: 3.5s; }
+.blossom:nth-child(11) { left: 10%; animation-duration: 9s; animation-delay: 6s; }
+.blossom:nth-child(12) { left: 50%; animation-duration: 14s; animation-delay: 5s; width: 22px; height: 22px; }
+.blossom:nth-child(13) { left: 80%; animation-duration: 7s; animation-delay: 7s; }
+.blossom:nth-child(14) { left: 30%; animation-duration: 10s; animation-delay: 8s; }
+.blossom:nth-child(15) { left: 70%; animation-duration: 11s; animation-delay: 6.5s; }

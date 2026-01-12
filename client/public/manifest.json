@@ -1,0 +1,73 @@
+{
+  "name": "UniQuizz - Học Nhanh, Nhớ Lâu",
+  "short_name": "UniQuizz",
+  "description": "Tạo quiz tự động bằng AI, học flashcard, chat với Mentor AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7f0",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "screenshots": [
+    {
+      "src": "/bgHome.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tạo Quiz",
+      "short_name": "Tạo Quiz",
+      "description": "Tạo quiz mới từ file",
+      "url": "/create",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Flashcard",
+      "short_name": "Flashcard",
+      "description": "Học flashcard",
+      "url": "/flashcard-hub",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Xem tiến độ học tập",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
